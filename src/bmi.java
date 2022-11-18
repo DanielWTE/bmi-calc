@@ -23,6 +23,8 @@ public class bmi {
             // Gibt nach aufruf der Funktion Wert aus
             System.out.println(getMassIndex(bmi) + "\n" + "Ihr genauer BMI Wert ist: " + bmi);
         } catch (NumberFormatException e) {
+            System.out.println("Bitte geben Sie nur Zahlen ein!");
+            // Fehler wenn ein String eingegeben wird
                 System.out.println("[Fehler] Bitte geben Sie nur Zahlen ein! " + e.getMessage());
             }
         finally {
